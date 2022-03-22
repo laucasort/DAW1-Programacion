@@ -31,33 +31,28 @@ public class Principal {
 		publicaciones[2] = r1;
 		publicaciones[3] = r2;
 		
-		Libro libroPrestado = (Libro) publicaciones[0];
-		libroPrestado.prestar();
-		publicaciones[0] = libroPrestado;
+		((Libro) publicaciones[0]).prestar();
 		
 		System.out.println(Arrays.toString(publicaciones));
 		System.out.println("Hay " + cuentaPrestados(publicaciones) + " libros prestados.");
-		System.out.println("Hay " + publicacionesAnterioresA(publicaciones) + " publicaciones anteriores a 1990.");
+		System.out.println("Hay " + publicacionesAnterioresA(publicaciones, 1990) + " publicaciones anteriores a 1990.");
 	}
 	
 	static int cuentaPrestados(Publicacion[] publicaciones) {
 		int res = 0;
 		for(Publicacion p:publicaciones) {
-			if(p instanceof Libro) {
-				Libro libro = (Libro) p;
-				if(libro.prestado()) {
-					res++;
-				}
+			if(p instanceof Prestable && ((Prestable) p).prestado()) {
+				res++;
 			}
 		}
 		
 		return res;
 	}
 	
-	static int publicacionesAnterioresA(Publicacion[] publicaciones) {
+	static int publicacionesAnterioresA(Publicacion[] publicaciones, int year) {
 		int res = 0;
 		for(Publicacion p:publicaciones) {
-			if(p.releaseYear() < 1990) {
+			if(p.releaseYear() < year) {
 				res++;
 			}
 		}
