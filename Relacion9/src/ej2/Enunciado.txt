@@ -1,0 +1,19 @@
+Una central eléctrica desea realizar un estudio sobre la cantidad de
+energía que se consume. Para ello, se recogerán los datos de las
+potencias típicas, en megawatios, suministradas semanalmente durante
+un período máximo de 52 semanas (1 año) para cada una de las energías
+(energía eólica, energía solar y energía nuclear). Se entrega la clase
+central eléctrica que debes terminar para que permita que en el programa
+principal se realice un menú con las siguientes opciones:
+
+	1. Mostrar un listado donde aparezca para cada semana cual a sido la
+	potencia media consumida.
+	
+	2. Potencia media de un tipo de energía. Se solicitará el tipo de energía
+	y se mostrará la media de ese tipo de energía durante.
+	
+	3. Semana con mayor consumo. Se solicitará el tipo de energía y se
+	mostrará la semana con mayor consumo.
+	
+	4. Mostrar las semanas en los que se haya consumido más energía
+	solar que energía eólica.
