@@ -1,0 +1,12 @@
+Se dispone de la clase Empleado. Se desea reutilizar esta clase para
+crear las especificaciones propias de los diferentes empleados de la
+empresa:
+	1. El operario tiene un sueldo máximo de 1200 euros. Se desea
+	almacenar para él la nave en la que trabaja (de 1 a 5).
+	2. El informático tiene un sueldo máximo de 2500 euros. Se desea
+	almacenar para él su especialidad (DESARROLLO,SISTEMAS, o
+	BD).
+	3. El directivo tiene un sueldo máximo de 3500 euros. Se desea
+	almacenar para él el nombre del departamento que dirige.
+	
+Realizar las clases Operario, Informático y Directivo y probarlas.

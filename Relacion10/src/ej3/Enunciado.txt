@@ -1,0 +1,23 @@
+Se desea desarrollar una aplicación que permita calcular el precio en
+una empresa de alquiler de vehículos.
+	- Cada vehículo se identifica por su matrícula.
+	- Los vehículos pueden ser de gama alta, media o baja.
+	- La empresa alquila 3 tipos de vehículos: coche, microbús y furgoneta de carga.
+	- El precio base de alquiler del vehículo es de 30 euros al día si es de
+	gama baja, 40 si el de gama media y 50 si es de gama alta.
+	- En caso de alquiler de un coche al precio base se le suma la cantidad de 3.5 euros
+	por día si el vehículo es gasolina y 2 euro por día si el vehículo es diesel.
+	- En caso de alquiler de un microbús se le añade la cantidad de 5 euros
+	por plaza que disponga el microbús.
+	- En el caso de furgonetas, al precio base se le añade 0,5 euros * PMA
+	(peso máximo autorizado).
+	
+Se debe presentar un menú con las siguientes opciones:
+	1. Alta de vehículo: Se solicitará el tipo de vehículo y sus datos y lo
+	dará de alta.
+	2. Cálculo de precio de alquiler: Se solicitará la matrícula del
+	vehículo, el número de días que ha sido alquilado y se mostrará el
+	precio del alquiler
+	3. Salir.
+	
+Considerar que la empresa trabajará con un máximo de 200 vehículos.
